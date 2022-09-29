@@ -111,7 +111,7 @@ def train_net(net,
                 pbar.set_postfix(**{'loss (batch)': loss.item()})
 
                 # Evaluation round
-                division_step = (n_train // (10 * batch_size))
+                division_step = (n_train // (100 * batch_size))
                 if division_step > 0:
                     if global_step % division_step == 0:
                         histograms = {}
