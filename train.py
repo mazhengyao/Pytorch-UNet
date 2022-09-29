@@ -18,7 +18,7 @@ from unet import UNet
 
 dir_img = Path('./data/imgs/')
 dir_mask = Path('./data/masks/')
-dir_checkpoint = Path('./checkpoints/')
+dir_checkpoint = Path('./')
 
 
 def train_net(net,
